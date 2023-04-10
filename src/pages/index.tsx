@@ -15,7 +15,7 @@ export default function Home() {
             <div className={styles['home__content']}>
                 <iframe
                     className={styles['home__map']}
-                    src="http://localhost:3001/"
+                    src="https://map.viriyu.com"
                     title="Viriyu Map"
                 />
                 <a href="mailto:kallum.parr@ntlworld.com?subject=Embedding Viriyu">
