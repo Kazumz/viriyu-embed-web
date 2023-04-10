@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <meta
           name="title"
           property="og:title"
-          content="UK property analysis"
+          content="Viriyu Embed | UK property analysis"
       />
 
       <link rel="icon" href="/favicon.ico" />
