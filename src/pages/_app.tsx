@@ -7,7 +7,6 @@ export default function App({ Component, pageProps }: AppProps) {
   return <>
     <Head>
       <title>Viriyu Embed | UK property analysis</title>
-      <meta name="description" content="UK property analysis" />
 
       <meta
           name="viewport"
