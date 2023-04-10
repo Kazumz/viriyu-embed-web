@@ -1,0 +1,13 @@
+[[plugins]]
+package = "@netlify/plugin-nextjs"
+
+[[headers]]
+for = "/*"
+
+[headers.values]
+  Content-Security-Policy = "default-src 'self' data: https: http://*.hotjar.com:* https://*.hotjar.com:* http://*.hotjar.io https://*.hotjar.io wss://*.hotjar.com 'unsafe-inline'; script-src 'self' https: 'unsafe-inline'; style-src 'self' 'unsafe-inline' https:; base-uri 'self'"
+          Referrer-Policy = "same-origin"
+Strict-Transport-Security = "max-age=15768000"
+   X-Content-Type-Options = "nosniff"
+          X-Frame-Options = "DENY"
+         X-XSS-Protection = "1; mode=block"
