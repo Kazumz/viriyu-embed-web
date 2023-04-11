@@ -6,9 +6,9 @@ import Button from '@/components/Button';
 export default function Home() {
     return (
         <main className={styles.home}>
-            <div className={styles['home__logo']}>
+            <a className={styles['home__logo']} href="https://viriyu.com">
                 <Image src={ViriyuLogo} alt="" fill={true} objectFit={'contain'} priority={true}/>
-            </div>
+            </a>
             
             <h1>Embed Viriyu directly on your website, for free.</h1>
             
