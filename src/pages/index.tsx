@@ -33,6 +33,7 @@ export default function Home() {
                         text="Email us"
                     />
                 </a>
+                <p className={styles['home__notice']}>Free for personal use, commercial licence may apply.</p>
             </div>
         </main>
     );
