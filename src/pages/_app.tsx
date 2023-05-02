@@ -2,12 +2,13 @@ import 'normalize.css/normalize.css';
 import '@/styles/globals.scss';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import Script from 'next/script';
 
 export default function App({ Component, pageProps }: AppProps) {
     return (
         <>
             <Head>
-                <title>Viriyu Embed | UK property analysis</title>
+                <title>Embed | UK property analysis</title>
 
                 <meta
                     name="viewport"
@@ -17,7 +18,7 @@ export default function App({ Component, pageProps }: AppProps) {
                 <meta
                     name="title"
                     property="og:title"
-                    content="Viriyu Embed | UK property analysis"
+                    content="Embed | UK property analysis"
                 />
 
                 <link rel="icon" href="/favicon.ico" />
@@ -85,6 +86,22 @@ export default function App({ Component, pageProps }: AppProps) {
                     content="black-translucent"
                 />
             </Head>
+
+            <Script
+                src="https://www.googletagmanager.com/gtag/js?id=G-LM019DS0PF"
+                strategy="afterInteractive"
+            />
+
+            <Script id="google-analytics" strategy="afterInteractive">
+                {`
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){window.dataLayer.push(arguments);}
+                  gtag('js', new Date());
+        
+                  gtag('config', 'G-LM019DS0PF);
+               `}
+            </Script>
+            
             <Component {...pageProps} />
         </>
     );
